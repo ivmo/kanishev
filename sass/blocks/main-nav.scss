@@ -1,0 +1,12 @@
+.main-nav {
+  display: none;
+}
+
+.main-nav--active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  display: block;
+}

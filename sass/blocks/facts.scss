@@ -1,0 +1,52 @@
+.facts {
+  position: relative;
+  padding-top: 210px;
+  padding-bottom: 40px;
+  background: #000 url("../img/facts-bg.jpg") no-repeat;
+  background-size: cover;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $bg-black;
+  }
+
+  @media #{$tablet-width--sm} {
+    padding-top: 86px;
+  }
+
+  .container {
+
+  }
+}
+
+.facts__inner {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.facts__man {
+  margin: 0;
+  position: absolute;
+  bottom: -187px;
+  left: 0;
+  // transform: translateX(-148%);
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+
+  @media #{$tablet-width--sm} {
+    display: none;
+  }
+
+
+  img {
+    max-width: 100%;
+  }
+}

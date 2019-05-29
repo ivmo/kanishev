@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'FuturisC';
+    src: local("FuturisC"), local("FuturisC-Light"),
+         url('../fonts/FuturisC-Light.woff2') format('woff2'),
+         url('../fonts/FuturisC-Light.woff') format('woff'),
+         url('../fonts/FuturisC-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturisC';
+    src: local("FuturisC"), local("FuturisC-Regular"),
+         url('../fonts/FuturisC-Regular.woff2') format('woff2'),
+         url('../fonts/FuturisC-Regular.woff') format('woff'),
+         url('../fonts/FuturisC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+	font-size: $font--xs;
+	line-height: $line--md;
+  font-family: 'FuturisC', Arial, sans-serif;
+  font-weight: 300;
+	font-style: normal;
+	color: #fff;
+	background: #1c1c1c;
+}
+
+.container {
+	box-sizing: border-box;
+  max-width: 1270px;
+  margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+.scroll-parallax {
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.box-big {
+	position: absolute;
+	top: -20%;
+	left: 0;
+	width: 275px;
+}
+
+.box-shaker {
+	position: absolute;
+	top: 10%;
+	left: 42%;
+	width: 148px;
+	height: 165px;
+}
+
+.box-left {
+	position: absolute;
+	top: -48%;
+	right: 0;
+	width: 277px;
+	height: 342px;
+}
+
+.box-right {
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	width: 237px;
+	height: 244px;
+}
+
+.power-rope {
+	position: absolute;
+	top: -90%;
+	right: 14%;
+	width: 200px;
+	height: 450px;
+
+	@media #{$tablet-width--md} {
+		top: -99%;
+  }
+	@media #{$mobile-width--sm} {
+		width: 190px;
+		right: -3%;
+  }
+}
+
+.power-ball {
+	position: absolute;
+	top: -85%;
+	left: 15%;
+	width: 140px;
+	height: 140px;
+
+	@media #{$tablet-width--md} {
+		top: -120%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -150%;
+    left: 10%;
+    width: 94px;
+		height: 94px;
+  }
+}
+
+.power-dumbbell {
+	position: absolute;
+	top: -34%;
+	left: 50%;
+	width: 138px;
+	height: 128px;
+
+	@media #{$tablet-width--md} {
+		top: -55%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -80%;
+    left: 45%;
+    width: 84px;
+    height: 128px;
+  }
+}
+
+.power-small-pancake {
+	position: absolute;
+	top: 1%;
+	left: 7%;
+	width: 103px;
+	height: 102px;
+
+	@media #{$tablet-width--md} {
+		top: -20%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -28%;
+    left: 5%;
+    width: 58px;
+  }
+}
+
+.power-big-pancake {
+	position: absolute;
+	top: 25%;
+	left: 20%;
+	width: 187px;
+	height: 184px;
+
+	@media #{$tablet-width--md} {
+		top: 11%;
+  }
+	@media #{$mobile-width--sm} {
+		top: 2%;
+		left: 15%;
+    width: 104px;
+    height: 128px;
+  }
+}
+
+.release-molecules {
+	position: absolute;
+	top: -6%;
+  right: 5%;
+  width: 556px;
+
+	@media #{$tablet-width--md} {
+    width: auto;
+		top: -40%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -34%;
+  }
+}
+
+.release-molecules-left {
+	position: absolute;
+	top: -96%;
+	left: 5%;
+	width: 159px;
+
+	@media #{$tablet-width--md} {
+		top: -140%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -174%;
+		width: 36%;
+  }
+}
+
+.release-molecules-right {
+	position: absolute;
+	top: -156%;
+	right: 5%;
+	width: 148px;
+
+	@media #{$tablet-width--md} {
+		top: -195%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -255%;
+  }
+}
+
+.release-molecules-top {
+	position: absolute;
+	top: -230%;
+	right: 35%;
+	width: 125px;
+
+	@media #{$tablet-width--md} {
+		top: -287%;
+  }
+	@media #{$mobile-width--sm} {
+		top: -376%;
+  }
+}
+
+.power-function-pic {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 650px;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+
+
+	@media #{$desktop-width-sm} {
+    max-width: 410px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+.fact-item {
+  position: relative;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 4px 15px;
+  padding-left: 142px;
+  background: rgba(255, 215, 1, 0.4);
+
+  &:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+  }
+
+  @media #{$tablet-width--sm} {
+    padding-left: 30px;
+  }
+
+  p {
+    position: relative;
+    max-width: 440px;
+    margin: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: $color-secondary;
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+}
